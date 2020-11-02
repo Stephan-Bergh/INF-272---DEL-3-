@@ -1,0 +1,65 @@
+﻿@{ Layout = null;}
+
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Donate today view</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+</head>
+
+<body class="body1" style="margin: 2px;">
+    
+        <div style="width: 319px;height: 133px;position: relative;margin: 2px;left: 1px;">
+            <div style="width: 9px;position: absolute;left: 1950px;height: 378px;"></div>
+            <p style="font-size: 80px;text-align: center;color: #3f51b5;font-weight: 750;margin: -10px;position: absolute;top: 10px;left: 50px;padding: 0px;">VACSA</p>
+            <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Login","Home") + "'");" style="position: absolute;margin: 291px;background-color: lightgrey;width: 160px;font-size: 25px;color: #3f51b5;left: 1750px;font-weight: 600;">LOG OUT</button>
+            <i class="glyphicon glyphicon-user" style="position: absolute;font-size: 250px;color: lightgrey;margin: 136px;top: -120px;left: 1850px;"></i>
+
+        </div>
+        <div style="width: 1401px;margin: 96px;left: 150px;position: relative;height: 1100px;opacity: 0.95;background-color: #67dcc7;top:-50px">
+            <div style="margin: 55px;width: 1298px;border: 6px dashed;height: 749px;position:absolute;top:20px">
+                <p style="font-size: 40px;text-align: center;color: #3f51b5;font-weight: 750;margin: 31px;position: absolute;top: 10px;left: 10px;padding: 0px;width: 1207px;border: 5px solid;">&nbsp;Choose the gift card(s) you would like to donate below :</p>
+                <button class="btn btn-primary" type="button" id="success" style="margin: 184px;width: 255px;height: 219px;position: absolute;border-radius: 15px;left: -100px;font-size: 70px;background-color: rgb(174,45,45);">
+                    R50
+                </button>
+                <button class="btn btn-primary" type="button" id="success" style="margin: 445px;width: 255px;height: 219px;position: absolute;border-radius: 15px;left: -140px;font-size: 70px;background-color: rgb(219,212,35);top: 20px;">
+                    R500
+                </button>
+                <button class="btn btn-primary" type="button" id="success" style="margin: 184px;width: 255px;height: 219px;position: absolute;left: 350px;border-radius: 15px;font-size: 70PX;background-color: darkblue;">
+                    R100
+                </button>
+                <button class="btn btn-primary" type="button" id="success" style="margin: 401px;width: 255px;height: 219px;position: absolute;left: 350px;border-radius: 15px;font-size: 70PX;background-color: rgb(55,201,55);top: 60px;">
+
+                    R1000
+                </button>
+                <button class="btn btn-primary" type="button" id="success" style="margin: 184px;width: 255px;height: 219px;position: absolute;left: 800px;border-radius: 15px;font-size: 70px;background-color: rgb(64,170,205);">
+                    R200
+                </button>
+            </div>
+        </div>
+ 
+
+    <div style="width: 1232px;margin: 33px;position: absolute;left: 300px;top: 1000px;height: 219px;">
+        <p style="font-size: 60px;text-align: center;color: #3f51b5;font-weight: 750;margin: 37px;position: absolute;top: 10px;left: 50px;padding: 5px;">Items in your cart : (0)</p>
+        <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Checkout","Home") + "'");" style="margin: -21px;position: absolute;left: 800px;height: 107px;width: 416px;top: 70px;font-size: 40px;font-weight: 500px;border-radius: 15px;background-color: black;">Proceed to Payment</button>
+    </div>
+    <ul class="nav nav-tabs" style="background-color: lightgrey;width: 1100px;position: absolute;left: 320px;top: 10px;height:90px">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("Home","Home") + "'");" style="width: 250px;height: 90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("FindHospital","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Find Hospital</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Donate Today</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("Covid","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Covid-19 Info</a></li>
+
+
+
+</body>
+
+</html>

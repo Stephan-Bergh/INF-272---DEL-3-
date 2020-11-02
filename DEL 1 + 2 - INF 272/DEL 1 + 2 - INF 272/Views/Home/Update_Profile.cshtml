@@ -1,0 +1,47 @@
+﻿@{ Layout = null;}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>HOME view</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body1">
+    <div style="width: 1007px;height: 564px;position: absolute;margin: 256px;left: 1px;">
+        <p style="font-size: 47px;text-align: center;color: #3f51b5;font-weight: 750;margin: -10px;position: absolute;top: 10px;left: 15px;padding: 0px;height: 95px;width: 990px;border-radius: 17px;border-width: 7.4px;border-style: solid;">Update your profile :</p>
+        <p style="font-size: 35px;text-align: center;color: #3f51b5;font-weight: 750;margin: 91px;position: absolute;top: 40px;left: 400px;padding: 0px;">John.wick@gmail.com&nbsp;</p>
+        <p style="font-size: 35px;text-align: center;color: #3f51b5;font-weight: 750;margin: 91px;position: absolute;top: 320px;left: 10px;padding: 0px;">Confirm password :</p>
+        <p style="font-size: 35px;text-align: center;color: #3f51b5;font-weight: 750;margin: 91px;position: absolute;top: 220px;left: 70px;padding: 0px;">New password :</p>
+        <p style="font-size: 35px;text-align: center;color: #3f51b5;font-weight: 750;margin: 91px;position: absolute;top: 130px;left: 90px;padding: 0px;">Old password :</p>
+        <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Home","Home") + "'");"  style="margin: 484px;position: absolute;width: 300px;height: 62px;left: -250px;font-size: 31px;background-color: red;">Cancel</button>
+        <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Home","Home") + "'");" style="margin: 484px;position: absolute;width: 300px;height: 63px;left: 100px;font-size: 31px;">
+            Confirm
+        </button>
+        <input type="password" style="margin: 233px;width: 397px;position: absolute;height: 35px;left: 300px;top: 190px;">
+        <input type="password" style="margin: 233px;width: 397px;position: absolute;height: 35px;left: 300px;top: 90px;">
+        <input type="password" style="margin: 233px;width: 397px;position: absolute;height: 35px;left: 300px;">
+        <p style="font-size: 35px;text-align: center;color: #3f51b5;font-weight: 750;margin: 91px;position: absolute;top: 40px;left: 90px;padding: 0px;">Current E-mail:&nbsp;</p>
+    </div>
+    <div style="width: 319px;height: 133px;position: absolute;margin: 2px;left: 1px;">
+        <p style="font-size: 80px;text-align: center;color: #3f51b5;font-weight: 750;margin: -10px;position: absolute;top: 10px;left: 50px;padding: 0px;">VACSA</p>
+        <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Login","Home") + "'");" style="position: absolute;margin: 291px;background-color: lightgrey;width: 160px;font-size: 25px;color: #3f51b5;left: 1750px;font-weight: 600;">LOG OUT</button>
+        <i class="glyphicon glyphicon-user" style="position: absolute;font-size: 250px;color: lightgrey;margin: 136px;top: -120px;left: 1850px;"></i>
+    </div>
+    <ul class="nav nav-tabs" style="background-color: lightgrey;width: 1100px;position: absolute;left: 320px;top: 10px;height:90px">
+        <li class="nav-item"><a class="nav-link active" href="#" onclick="@("window.location.href='" + Url.Action("Home","Home") + "'");" style="width: 250px;height: 90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("FindHospital","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Find Hospital</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("DonateToday","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Donate Today</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("Covid","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Covid-19 Info</a></li>
+    </ul>
+ 
+
+</body>
+
+</html>

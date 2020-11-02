@@ -1,0 +1,75 @@
+﻿@{ Layout = null;}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>HOME view</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">$("#slideshow > div:gt(0)").hide();
+
+        setInterval(function () {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 3000);</script>
+</head>
+
+<body class="body1">
+    <div id="slideshow" style="position:absolute;margin:300px;width:700px;left:250px;height:700px">
+        <div>
+            <img src="~/Content/Images/car2.jpg" style="left:10px;width:670px;height:670px">
+        </div>
+        <div>
+            <img src="~/Content/Images/car1.jpg" style="width:670px;height:670px">
+        </div>
+        <div>
+            <img src="~/Content/Images/car3.png" style="width:670px;height:670px">
+        </div>
+    </div>
+    <div style="width: 319px;height: 133px;position: absolute;margin: 2px;left: 1px;">
+        <p style="font-size: 80px;text-align: center;color: #3f51b5;font-weight: 750;margin: -10px;position: absolute;top: 10px;left: 50px;padding: 0px;">VACSA</p>
+        <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Login","Home") + "'");" style="position: absolute;margin: 291px;background-color: lightgrey;width: 160px;font-size: 25px;color: #3f51b5;left: 1750px;font-weight: 600;">LOG OUT</button>
+        <i class="glyphicon glyphicon-user" style="position: absolute;font-size: 250px;color: lightgrey;margin: 136px;top: -120px;left: 1850px;"></i>
+    </div>
+
+    <div style="width: 340px;height: 380px;position: absolute;margin: 197px;left: -70px;top: 120px;border: 8px solid #3f51b5;">
+        <img src="~/Content/Images/United_Nations-logo-47BC42E72F-seeklogo.com.png" style="margin: 9px;width: 235px;position: absolute;right: 35px;">
+        <button class="btn btn-primary" type="button" onclick="location.href='https://www.un.org/en/'" style="margin: 23px;position: absolute;top: 200px;width: 280px;height: 109px;font-size: 19px;font-weight: 600;left: -1px;">
+            UNITED NATIONS WEBSITE
+        </button>
+    </div>
+
+    <div style="width: 319px;height: 367px;position: absolute;margin: 197px;left:1150px;top: 125px;border: 8px solid #3f51b5;">
+        <p style="font-size: 34px;text-align: center;font-weight: 700;color: #3f51b5;border-bottom: 8px solid;height: 103px;">Give us your feedback :</p>
+        <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Feedback","Home") + "'");" style="margin: 17px;height: 120px;width: 268px;position: absolute;font-size: 27px;font-weight: 500;top: 150px;background-color: #239028;">FEEDBACK FORM</button>
+    </div>
+    <div style="position: absolute;right: 400px;width: 6px;height: 402px;">
+    </div>
+   
+   
+   
+    <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Update_Profile","Home") + "'");" style="position: absolute;margin: 291px;background-color: lightgrey;width: 200px;font-size: 25px;color: #3f51b5;left: 1730px;top:100px;font-weight: 600;">Update profile</button>
+    </div><ul class="nav nav-tabs" style="background-color: lightgrey;width: 1100px;position: absolute;left: 320px;top: 10px;height:90px">
+        <li class="nav-item"><a class="nav-link active" href="#" style="width: 250px;height: 90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("FindHospital","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Find Hospital</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("DonateToday","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Donate Today</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("Covid","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Covid-19 Info</a></li>
+    </ul>
+
+
+
+
+
+</body>
+
+</html>

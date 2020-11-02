@@ -1,0 +1,51 @@
+﻿.body1 {
+    background-image: url('Images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-color: red;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: #bdbdbd;
+}
+
+.body2 {
+    background-image: url('Images/covid.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-color: red;
+}
+.body3 {
+    background-image: url('Images/hands.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-color: red;
+}
+
+#slideshow {
+    margin: 80px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+    #slideshow > div {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    

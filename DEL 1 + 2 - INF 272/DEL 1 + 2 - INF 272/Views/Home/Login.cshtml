@@ -1,0 +1,54 @@
+﻿@{ Layout = null;}
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Login View</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/styles.css" />
+</head>
+
+<body class="body1">
+    <div style="width: 216px;height: 185px;position: absolute;left: 170px;margin: 41px;padding: 3px;">
+        <img src="~/Content/Images/United_Nations-logo-47BC42E72F-seeklogo.com.png" style="height: 162px;align-content: center;margin: 8px;" />
+    </div>
+    <div style="height: 101px;width: 660px;position: absolute;left: 600px;margin: 62px;">
+        <p style="font-size: 80px;text-align: center;color: #3f51b5;font-weight: 750;padding: -26px;margin: -10px;">VACSA</p>
+        <div style="height: 32px;margin: 40px;width: 505px;position: absolute;left: 30px;">
+            <p style="font-size: 25px;text-align: center;width: 550px;height: 56px;margin: 1px;color: #3f51b5;font-weight: 400;">Dont hate, VACCINATE!</p>
+            <div style="margin: -181px;position: absolute;left: 1050px;top:30px;width: 216px;height: 185px;">
+                <img src="~/Content/Images/Good health.png" style="width: 219px;height: 186px;margin: -1px;padding: 15px;" />
+                <div style="margin: 181px;position: absolute;height: 312px;width: 399px;right: -160px;color: lightgrey;opacity: 0.80;">
+                    <p style="text-align: center;font-size: 30px;color: #3f51b5;border-color: #3f51b5;border-bottom: 4px solid black;border-bottom-width: 1px;">Don&#39;t have an account?</p>
+                    <button class="btn btn-primary" onclick="@("window.location.href='" + Url.Action("SignUp","Home") + "'");" type="button" style="width: 245px;height: 60px;margin: 78px;position: absolute;bottom: 100px;font-size: 30px;background-color: red;">Sign up here!</button>
+                    <p style="position: absolute;right: -60px;text-align: center;font-size: 30px;color: #3f51b5;margin: 98px;width: 289px;border-bottom: 1px solid black;">VACSA on the move</p>
+                    <img src="~/Content/Images/76008bb9685d410d47fe1fa01dc54f15.jpg" style="margin: 120px;position: absolute;left: -80px;top: 95px;width: 84px;height: 85px;" />
+                    <button class="btn btn-primary" type="button" style="position: absolute;top: 30px;left: -60px;font-size: 30px;margin: 201px;height: 62px;width: 247px;">Our Instagram</button>
+                    <img style="position: absolute;" /><img /><i class="fa fa-star"></i>
+                </div>
+                <div style="margin: 181px;position: absolute;right: 1000px;height: 312px;padding: -40px;width: 399px;opacity: 0.80;color: lightgrey;">
+                    <p style="text-align: center;font-size: 30px;color: #3f51b5;border-color: #3f51b5;border-bottom: 4px solid black;border-bottom-width: 1px;">Purpose :</p>
+                    <p style="font-size: 20px;color: #3f51b5;text-align: center;padding: 4px;font-weight: 700;">
+                        Vaccinating your child can help prevent many potential visits to the hospital and also save big time money on health insurance! Good health and well being is the main target of this website and is created in accordance with the UN
+                        sustainable development goal 3.
+                    </p>
+                    <form>
+                        <div style="margin: -296px;position: absolute;top:296px;left: 700px;width: 747px;height: 312px;background-color: rgb(34,228,146);opacity: 0.80;">
+                            <label style="font-size: 40px;height: 19px;position: relative; top:40px;left:55px; 30px;color: #1d38ca;font-weight: 600;">E-Mail :</label>
+                            <input type="email" style="width: 432px;height: 58px;padding: 28px;margin: -2px;position: relative;top: 30px;left: 130px;" required />
+                            <label style="margin: -16px;font-size: 40px;height: 7px;padding: 46px;color: #1d38ca;font-weight: 600;position: relative;top: 40px;">Password :</label>
+                            <input type="password" style="width: 432px;height: 58px;padding: 28px;margin: -2px;position: relative;top: 40px;right:26;" required />
+                            <button class="btn btn-primary" type="submit" style="margin: 35px;width: 278px;position: relative;left: 300px;top:25px;height: 74px;font-size: 40px;padding: -55px;">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+﻿@{ Layout = null;}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Find hospital view</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="body1" style="margin: 2px;">
+    <div style="width: 319px;height: 133px;position: relative;margin: 2px;left: 1px;">
+        <div style="width: 9px;position: absolute;left: 1950px;height: 378px;"></div>
+        <p style="font-size: 80px;text-align: center;color: #3f51b5;font-weight: 750;margin: -10px;position: absolute;top: 10px;left: 50px;padding: 0px;">VACSA</p>
+        <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Login","Home") + "'");" style="position: absolute;margin: 291px;background-color: lightgrey;width: 160px;font-size: 25px;color: #3f51b5;left: 1750px;font-weight: 600;">LOG OUT</button>
+        <i class="glyphicon glyphicon-user"         style="position: absolute;font-size: 250px;color: lightgrey;margin: 136px;top: -120px;left: 1850px;"></i>
+                                                                      
+    </div>
+
+    <div style="width: 1401px;margin: 96px;left: 150px;position: relative;height: 1210px;opacity: 0.95;background-color: #67dcc7;">
+        <p style="font-size: 34px;margin: 0px;width: 1404px;border-bottom: 4px solid black;color: #3f51b5;">&nbsp; &nbsp;Find a hospital clinic near you below :</p>
+        <div style="width: 609px;height: 423px;border-right: 5px solid;border-bottom: 5px solid;">
+            <div class="dropdown" style="position:absolute;left:200px;top:70px">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:lightblue;color:black;width:200px;font-size:20px">
+                    Select Province 
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" style="top : 40px;width:200px;text-align:center">
+                    <li><a href="#"></a> Gauteng</li>
+                    <li><a href="#"></a> Kwazulu-natal</li>
+                    <li><a href="#"></a> Limpopo</li>
+                    <li><a href="#"></a> Free state</li>
+                    <li><a href="#"></a> Mpumalanga</li>
+                    <li><a href="#"></a> Estern cape</li>
+                    <li><a href="#"></a> Western Cape</li>
+                    <li><a href="#"></a> Northern Cape</li>
+                    <li><a href="#"></a> North West</li>
+                </ul>
+            </div>
+            <img src="~/Content/Images/ShowImage.png" style="width: 568px;height: 321px;position: absolute;top: 130px;left: 40px;">
+        </div>
+
+        <div style="padding: 24px;top:50px;height: 54px;margin: 423px;position: absolute;width: 610px;left: -424px;border-bottom: 4px solid;border-right: 4px solid;">
+            <p style="color: #3f51b5;font-size: 30px;margin: -19px;text-align: center;">Select Age group of your child below :</p>
+            <div style="width: 206px;height: 423px;border-right: 5px solid;border-bottom: 5px solid;margin: 24px;position: absolute;left: -22px;">
+                <button class="btn btn-primary" type="button" style="margin: 17px;background-color: rgb(218,152,33);width: 147px;position: absolute;left: 10px;">Baby</button>
+                <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 250px;height: 26px;"><input class="form-check-input" type="radio" id="formCheck-1" required="" style="height: 20px;">
+                <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">10 Weeks</label></div>
+                <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 330px;height: 26px;"><input class="form-check-input" type="radio" id="formCheck-4" required="">
+                <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">14 Weeks</label></div>
+                <div style="width: 557px;height: 123px;border-right: 5px solid;border: 5px solid;margin: 252px;position: absolute;left: -220px;top: 200px;">
+                    <button class="btn btn-primary" type="button" style="width: 241px;margin: 14px;height: 83px;font-size: 20px;font-weight: 700;background-color: red;border-radius: 15px;">Re-select age group</button>
+                    <button class="btn btn-primary" type="button"  style="width: 241px;margin: 14px;height: 83px;font-size: 20px;font-weight: 700;background-color: Green;border-radius: 15px;">
+                                                                                                 
+                        Find Clinics near me!
+                    </button>
+                </div>
+                <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 160px;height: 26px;">
+                <input class="form-check-input" type="radio" id="formCheck-3" required="" style="height: 21px;">
+                <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">6 Weeks</label></div>
+                <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 80px;height: 41px;">
+                <input class="form-check-input" type="radio" id="formCheck-2" required="" style="width: 15px;height: 19px;">
+                <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">At Birth</label></div>
+            </div>
+        </div>
+        <div style="width: 202px;height: 423px;border-right: 5px solid;border-bottom: 5px solid;margin: 477px;position: absolute;left: -70px;top:50px">
+            <button class="btn btn-primary" type="button" style="margin: 17px;width: 147px;background-color: rgb(218,152,33);position: absolute;left: 10px;">Child</button>
+            <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 160px;height: 26px;">
+            <input class="form-check-input" type="radio" id="formCheck-6" required="" style="height: 21px;">
+            <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">6 Years</label></div>
+            <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 250px;height: 26px;">
+            <input class="form-check-input" type="radio" id="formCheck-9" required="" style="height: 20px;">
+            <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">12 Months</label></div>
+        </div>
+        <div style="width: 741px;height: 690px;border: 5px solid;position: absolute;left: 565px;top: 100px;border-bottom: 5px solid;margin: 67px;">
+            <p style="font-size: 40px;margin: 29px;text-align: center;">Clinics Near you :</p>
+            <div class="table-responsive" style="height: 206px;width:700px">
+                <table class="table" style="width:750px">
+                    <thead>
+                        <tr>
+                            <th style="font-size: 20px;border-bottom: 4px solid;width: 231px;">CLINIC NAME :</th>
+                            <th style="border-bottom: 4px solid;width: 248px;font-size: 20px;">CONTACT NUMBER</th>
+                            <th style="border-bottom: 4px solid;font-size: 20px;">LOCATION :</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-size: 20px;">Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 20px;">Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="width: 205px;height: 423px;border-right: 5px solid;border-bottom: 5px solid;margin: 477px;position: absolute;left: -270px;top:50px">
+            <button class="btn btn-primary" type="button" style="margin: 17px;width: 147px;background-color: rgb(218,152,33);position: absolute;left: 10px;">Toddler</button>
+            <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 80px;height: 41px;">
+            <input class="form-check-input" type="radio" id="formCheck-5" required="" style="width: 15px;height: 19px;">
+            <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">6 Months</label></div>
+            <div class="form-check"
+                 style="margin: 19px;position: absolute;text-align: center;top: 160px;height: 26px;">
+            <input class="form-check-input" type="radio" id="formCheck-6" required="" style="height: 21px;">
+            <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">9 Months</label></div>
+            <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 250px;height: 26px;">
+            <input class="form-check-input" type="radio" id="formCheck-7" required="" style="height: 20px;">
+            <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">12 Months</label></div>
+            <div class="form-check" style="margin: 19px;position: absolute;text-align: center;top: 330px;height: 26px;">
+            <input class="form-check-input" type="radio" id="formCheck-8" required="">
+            <label class="form-check-label" for="formCheck-1" style="font-size: 20px;font-weight: 900;">18 Months</label></div>
+        </div>
+    </div>
+    <ul class="nav nav-tabs" style="background-color: lightgrey;width: 1100px;position: absolute;left: 320px;top: 10px;height:90px">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("Home","Home") + "'");" style="width: 250px;height: 90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Home</a></li>
+        <li class="nav-item"><a class="nav-link active"  href="#" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Find Hospital</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("DonateToday","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Donate Today</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("Covid","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Covid-19 Info</a></li>
+    </ul>
+    
+    
+</body>
+
+</html>

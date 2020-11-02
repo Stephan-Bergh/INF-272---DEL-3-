@@ -1,0 +1,61 @@
+﻿@{ Layout = null;}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Proceed to checkout modal view</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body3" style="margin: 2px;">
+    <div style="width: 319px;height: 133px;position: relative;margin: 2px;left: 1px;">
+
+        <p style="font-size: 80px;text-align: center;color: #3f51b5;font-weight: 750;margin: -10px;position: absolute;top: 10px;left: 50px;padding: 0px;">VACSA</p>
+        <button class="btn btn-primary" type="button" style="position: absolute;margin: 291px;background-color: lightgrey;width: 160px;font-size: 25px;color: #3f51b5;left: 1750px;font-weight: 600;">LOG OUT</button>
+        <i class="glyphicon glyphicon-user" style="position: absolute;font-size: 250px;color: lightgrey;margin: 136px;top: -120px;left: 1850px;"></i>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" style="width: 805px;height: 286px;margin: 419px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="height: -151px;">
+                    <h4 class="modal-title">Modal Title</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" style="width: 500px;height: 117px;">
+                    <p style="width: 498px;position: absolute;left: 10px;font-size: 40px;margin: -4px;text-align: center;">Are you sure you want to cancel your transaction?</p>
+                </div>
+                <div class="modal-footer" style="width: 425px;margin: 153px;height: 70px;position: absolute;left: 10px;">
+                    <button class="btn btn-light" type="button" data-dismiss="modal" style="height: 70px;width: 162px;font-size: 40px;background-color: rgb(105,99,99);color: white;">Yes</button>
+                    <button class="btn btn-primary" type="button" style="width: 163px;height: 72px;font-size: 40px;background-color: rgb(105,99,99);padding: -28px;margin: 8px;">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 1084px;margin: 96px;left: 70px;position: relative;height: 559px;opacity: 0.95;background-color: #ada3a3;">
+        <div style="width: 1085px;height: 89px;border: 2px solid;border-bottom: 6px solid;">
+            <p style="font-size: 60px;text-align: center;color: #3f51b5;font-weight: 750;margin: -21px;position: absolute;top: 10px;left: 150px;padding: 0px;text-align:center">Report on donations made</p>
+        </div>
+        <div style="margin: 450px;height: 122px;width: 966px;position: absolute;left: -390px;border: 5px solid;top: -230px;">
+            <p style="font-size: 50px;margin: 21px;position: absolute;left: 150px;">Grand Total :</p>
+            <label style="margin: 51px;font-size: 50px;margin: 21px;position: absolute;left: 600px;">R100</label>
+            <button class="btn btn-primary" type="button" onclick="@("window.location.href='" + Url.Action("Home","Home") + "'");" style="position: absolute;left: -50px;height: 76px;width: 698px;font-size: 30px;background-color: rgb(54,58,152);border-radius: 20px;font-weight: 900;margin: 180px;">Return to home page</button>
+        </div>
+    </div>
+    <ul class="nav nav-tabs" style="background-color: lightgrey;width: 1100px;position: absolute;left: 320px;top: 10px;height:90px">
+        <li class="nav-item"><a class="nav-link active" href="#" onclick="@("window.location.href='" + Url.Action("Home","Home") + "'");" style="width: 250px;height: 90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("FindHospital","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Find Hospital</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("DonateToday","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Donate Today</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="@("window.location.href='" + Url.Action("Covid","Home") + "'");" style="width: 250px;height:90px;font-size: 24px;font-weight: 800;color: #3f51b5;text-align: center;">Covid-19 Info</a></li>
+    </ul>
+    <div style="width: 9px;position: absolute;left: 1950px;top:-100px;height: 450px;"></div>
+    <div style="position: relative;right: 300px;width: 6px;height: 402px;"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
